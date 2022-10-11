@@ -19,3 +19,4 @@
 
 # Add alist
 git clone https://github.com/alist-org/alist.git package/alist
+git clone https://github.com/sbwml/luci-app-alist package/alist
