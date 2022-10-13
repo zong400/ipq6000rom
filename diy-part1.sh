@@ -14,9 +14,9 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # Add alist
-#git clone https://github.com/alist-org/alist.git package/alist
-#git clone https://github.com/sbwml/luci-app-alist package/alist
+git clone https://github.com/alist-org/alist.git package/alist
+git clone https://github.com/sbwml/luci-app-alist package/alist
