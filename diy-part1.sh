@@ -19,5 +19,6 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # Add alist
-#git clone https://github.com/alist-org/alist.git package/alist
+rm -rf package/alist
+git clone https://github.com/alist-org/alist.git package/alist
 git clone https://github.com/sbwml/luci-app-alist package/alist
