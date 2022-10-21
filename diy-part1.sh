@@ -16,12 +16,6 @@
 # Add a feed source
 #sed -i "/helloworld/d" "feeds.conf.default"
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-# Add alist
-git clone https://github.com/alist-org/alist.git package/alist
-git clone https://github.com/sbwml/luci-app-alist package/alist-luci
-
-# Add aliyun pan
-git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git package/aliyundriver-webdav
-git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/aliyundriver-webdav-luci
+sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
